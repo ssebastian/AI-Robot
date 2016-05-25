@@ -1,0 +1,43 @@
+[phenotype]
+input_nodes         = 6
+output_nodes        = 2
+fully_connected     = 0
+max_weight          = 30
+min_weight          = -30
+feedforward         = 1
+nn_activation       = tanh
+hidden_nodes        = 0
+weight_stdev        = 0.9
+
+[genetic]
+pop_size                = 50
+max_fitness_threshold   = 700.0
+prob_add_conn           = 0.397
+prob_add_node           = 0.491
+prob_delete_conn        = 0.366
+prob_delete_node        = 0.446
+prob_mutate_bias        = 0.05
+bias_mutation_power     = 2.057
+prob_mutate_response    = 0.379
+response_mutation_power = 4.296
+prob_mutate_weight      = 0.257
+prob_replace_weight     = 0.01
+weight_mutation_power   = 0.825
+prob_toggle_link        = 0.259
+elitism                 = 1
+
+[genotype compatibility]
+compatibility_threshold = 2.0
+compatibility_change    = 0.0
+excess_coefficient      = 1.0
+disjoint_coefficient    = 1.0
+weight_coefficient      = 0.4
+
+[species]
+species_size        = 10
+survival_threshold  = 0.1
+old_threshold       = 30
+youth_threshold     = 10
+old_penalty         = 1.0
+youth_boost         = 1.0
+max_stagnation      = 10

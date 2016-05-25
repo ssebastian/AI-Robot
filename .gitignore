@@ -1,0 +1,14 @@
+__pycache__
+*.pyc
+*.npy
+*.blend1
+*.blend2
+*.csv
+checkpoint_*
+*.svg
+*.gv
+*.xml
+.idea/
+*.png
+
+
