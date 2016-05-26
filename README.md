@@ -1,3 +1,6 @@
+# Ai Robot
+This project is meant to learn aritificial intelligence algorithms. You can run the algorithms in a real environment (ultimate 4tronix initio) or in simulation. We have two different simulations. First you can use MORSE, a robot simulation environment based on blender. Thus it has a quite real physics engine and is close to reality. Second you can use a optimized simulation tool that is simulating the environment using computational geometry (in 2D) and is very fast.
+
 # Install environment:
 
 To use this project one needs to install the following python dependencies:
