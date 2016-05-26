@@ -24,7 +24,7 @@ python -m examples/neat/train
 
 Q-Learning:
 ```
-python -m examples/q_learn/test
+python -m examples/q_learn/train
 ```
 
 

@@ -41,7 +41,7 @@ with CurrentController(3) as control:
     task = CameraPixelsRedCubeTask(environment, True)
 
     checkpoint="checkpoint_0" if len(sys.argv) <= 1 else str(sys.argv[1])
-    pop = population.Population('approach/neat/neat_config', checkpoint_file=checkpoint)
+    pop = population.Population('example/neat/neat_config', checkpoint_file=checkpoint)
 
     winner = pop.most_fit_genomes[-1]
     print('Number of evaluations: {0:d}'.format(winner.ID))

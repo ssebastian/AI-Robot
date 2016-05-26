@@ -53,7 +53,7 @@ with CurrentController(3) as control:
     path = "" if len(sys.argv) <= 1 else str(sys.argv[1])
     best_n = 3 if len(sys.argv) <= 2 else str(sys.argv[2])
 
-    control.cubes_x = 3
+    control.cubes_x = 2
     control.cubes_y = 4
     control.cubes_size = 3
     task.max_samples = 1000
@@ -62,7 +62,7 @@ with CurrentController(3) as control:
     while os.path.isfile(os.path.join(path, "checkpoint_%d" % i)):
         checkpoint = os.path.join(path, "checkpoint_%d" % i)
         print("load checkpoint %d" % i)
-        pop = population.Population('approach/neat/neat_config', checkpoint_file=checkpoint)
+        pop = population.Population('examples/neat/neat_config', checkpoint_file=checkpoint)
 
         for n in reversed(range(1, min(best_n, len(pop.most_fit_genomes))+1)):
             control.pause()
