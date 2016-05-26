@@ -1,11 +1,17 @@
 # Install environment:
 
+To use this project one needs to install the following python dependencies:
+```
+matplotlib, scipy, numpy, pillow, readchar, shapely, descartes, neat-python(0.5)
+```
+
+Instalation example for Ubuntu envrionment:
 ```
 sudo apt-get install python3-pip
 sudo apt-get install python-dev libfreetype6-dev libpng-dev libjpeg-dev libjpeg8-dev libpng3
 sudo apt-get install python-matplotlib
-pip3 install --user scipy numpy pillow readchar colormath shapely descartes
-pip3 install --user neat-python==0.5
+pip install --user scipy numpy pillow readchar shapely descartes
+pip install --user neat-python==0.5
 ```
 
 
@@ -13,12 +19,12 @@ pip3 install --user neat-python==0.5
 
 Neat:
 ```
-python3 -m examples/neat/train
+python -m examples/neat/train
 ```
 
 Q-Learning:
 ```
-python3 -m examples/q_learn/test
+python -m examples/q_learn/test
 ```
 
 
