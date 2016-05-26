@@ -9,13 +9,24 @@ Instalation example for Ubuntu envrionment:
 ```
 sudo apt-get install python3-pip
 sudo apt-get install python-dev libfreetype6-dev libpng-dev libjpeg-dev libjpeg8-dev libpng3
+sudo apt-get install morse-simulator
 sudo apt-get install python-matplotlib
 pip install --user scipy numpy pillow readchar shapely descartes
 pip install --user neat-python==0.5
 ```
 
+Import the morse project:
+```
+morse import /path/to/project/simulator/morse_sim/
+```
+
 
 # Start
+
+If you are using the morse simulator, start the simulator with:
+```
+morse run morse_sim
+```
 
 Neat:
 ```
@@ -26,6 +37,8 @@ Q-Learning:
 ```
 python -m examples/q_learn/train
 ```
+
+This project is in a very early state. Please feel free to open issues whenever something is not working (or if I forgot to describe something).
 
 
 # Copyright

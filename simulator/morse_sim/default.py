@@ -23,14 +23,13 @@ __maintainer__ = "Sebastian Schmoll"
 __email__ = "sebastian@schmoll-muenchen.de"
 
 
-""" Basic MORSE simulation scene for <simulation> environment
+""" Basic MORSE simulation scene for <ai_robot> environment
 
 Feel free to edit this template as you like!
 """
 
 from morse.builder import *
 from morse_sim.builder.robots import Box, Redbox
-from morse_sim.random_env import randomize
 from morse.core import blenderapi
 
 #bpymorse.set_speed(10, 5, 5)
@@ -40,7 +39,7 @@ from morse.core import blenderapi
 # Out-the-box available robots are listed here:
 # http://www.openrobots.org/morse/doc/stable/components_library.html
 #
-# 'morse add robot <name> simulation' can help you to build custom robots.
+# 'morse add robot <name> ai_robot' can help you to build custom robots.
 robot = ATRV()
 
 #robot.frequency(delay=1)
@@ -119,16 +118,12 @@ for i in range(6):
 
 
 # set 'fastmode' to True to switch to wireframe mode
-env = Environment('simulation/environment/random_red_cube.blend', fastmode = False)
+env = Environment('environment/random_red_cube.blend', fastmode = False)
 env.set_camera_location([10.0, -10.0, 10.0])
 env.set_camera_rotation([1.05, 0, 0.78])
 
-# randomize()
-
 from threading import Timer
 from morse.core.morse_time import FixedSimulationStepStrategy
-
-#env.set_time_strategy(FixedSimulationStepStrategy())
 
 # env.show_framerate(True)
 

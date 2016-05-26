@@ -1,14 +1,14 @@
 from morse.builder import *
 
-class Redbox(GroundRobot):
+class Box(GroundRobot):
     """
-    A template robot model for redBox, with a motion controller and a pose sensor.
+    A template robot model for box, with a motion controller and a pose sensor.
     """
     def __init__(self, name = None, debug = True):
 
-        # redBox.blend is located in the data/robots directory
-        Robot.__init__(self, 'simulation/robots/redBox.blend', name)
-        self.properties(classpath = "simulation.robots.redBox.Redbox")
+        # box.blend is located in the data/robots directory
+        Robot.__init__(self, 'morse_sim/robots/box.blend', name)
+        self.properties(classpath = "morse_sim.robots.Box")
 
         ###################################
         # Actuators

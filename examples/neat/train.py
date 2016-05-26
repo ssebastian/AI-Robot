@@ -22,8 +22,8 @@ __email__ = "sebastian@schmoll-muenchen.de"
 
 
 
-from experiment_controller.comsim import ComSimController as CurrentController
-# from experiment_controller.morse import MorseController as CurrentController
+#from experiment_controller.comsim import ComSimController as CurrentController
+from experiment_controller.morse import MorseController as CurrentController
 #from controller.tronix import TronicController as CurrentController
 
 
